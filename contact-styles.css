@@ -1,0 +1,178 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(circle at 50% 50%, #0d0d0d, #121212, #1a1a1a);
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Container */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Card */
+.contact-card {
+  background: linear-gradient(135deg, #212121, #2e2e2e);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px #111;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow Overlay */
+.glow-overlay {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, rgba(255, 0, 150, 0.4), rgba(0, 200, 255, 0.4));
+  filter: blur(150px);
+  z-index: 0;
+  animation: glow 6s linear infinite;
+}
+
+@keyframes glow {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(10px, -10px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Card Content */
+.content > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.header {
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  text-decoration: none;
+  font-size: 14px;
+  color: #00c8ff;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.back-btn:hover {
+  color: #ff007f;
+  text-shadow: 0 0 5px rgba(255, 0, 127, 0.7), 0 0 10px rgba(255, 0, 127, 0.7);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.6), inset 0 0 5px rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+  animation: pulse 3s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.6), inset 0 0 5px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(0, 200, 255, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* Name and Role */
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff007f, #00c8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.role {
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-bottom: 20px;
+}
+
+/* Bio */
+.bio {
+  font-size: 16px;
+  color: #c0c0c0;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+/* Contact Details */
+.contact-details {
+  margin-bottom: 20px;
+}
+
+.contact-link {
+  display: block;
+  font-size: 14px;
+  color: #00c8ff;
+  margin-bottom: 8px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.contact-link:hover {
+  color: #ff007f;
+  text-shadow: 0 0 5px rgba(255, 0, 127, 0.7), 0 0 10px rgba(255, 0, 127, 0.7);
+}
+
+.address {
+  font-size: 14px;
+  color: #c0c0c0;
+  margin-bottom: 20px;
+}
+
+/* QR Code */
+.qr-code img {
+  margin-top: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 127, 0.6);
+}
+
+/* Button */
+.cta-button {
+  background: linear-gradient(90deg, #ff007f, #00c8ff);
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 14px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(255, 0, 127, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+  box-shadow: 0 5px 20px rgba(255, 0, 127, 0.8);
+  transform: translateY(-3px);
+}
