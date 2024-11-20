@@ -3,45 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - TechCardy</title>
-  <link rel="stylesheet" href="styless2.css">
+  <title>Contact Us - TechCardy</title>
+  <link rel="stylesheet" href="contact-styles.css">
 </head>
 <body>
-  <header class="contact-header">
-    <a href="index.html" class="back-btn">← Back to Home</a>
-    <h1 class="page-title">Contact Us</h1>
-  </header>
-
   <div class="contact-container">
     <div class="contact-card">
-      <div class="card-glow"></div>
-      <div class="profile-info">
+      <div class="glow-overlay"></div>
+      <div class="header">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+        <h1 class="title">Contact Us</h1>
+      </div>
+      <div class="content">
         <img src="pic.jpg" alt="Profile Picture" class="profile-pic">
         <h2 class="name">Krishi Agarwal</h2>
-        <p class="role">Founder of TechCardy</p>
+        <p class="role">Founder, TechCardy</p>
+        <p class="bio">
+          We at TechCardy deliver NFC-enabled smart business cards that elevate modern networking and redefine contact sharing.
+        </p>
+        <div class="contact-details">
+          <a href="tel:+918250226290" class="contact-link">📞 +91 8250226290</a>
+          <a href="mailto:agarwalkrishi67@gmail.com" class="contact-link">📧 agarwalkrishi67@gmail.com</a>
+          <p class="address">📍 Siliguri, West Bengal - 734001</p>
+        </div>
+        <div class="qr-code">
+          <img src="qr-code.png" alt="QR Code">
+        </div>
+        <button class="cta-button" id="saveContact">Save Contact</button>
       </div>
-
-      <div class="bio">
-        <p>At TechCardy, we provide NFC-enabled smart business cards that empower modern networking and redefine contact sharing.</p>
-      </div>
-
-      <div class="contact-details">
-        <a href="tel:+918250226290" class="contact-link">📞 +91 8250226290</a>
-        <a href="mailto:agarwalkrishi67@gmail.com" class="contact-link">📧 agarwalkrishi67@gmail.com</a>
-        <p class="address">📍 Siliguri, West Bengal - 734001</p>
-      </div>
-
-      <div class="qr-code">
-        <img src="qr-code.png" alt="Scan QR Code">
-      </div>
-
-      <button class="cta-button" id="saveContact">Save Contact</button>
     </div>
   </div>
-
-  <footer class="footer">
-    <p>© 2023 TechCardy. All Rights Reserved.</p>
-  </footer>
 
   <script>
     document.getElementById("saveContact").addEventListener("click", function () {
