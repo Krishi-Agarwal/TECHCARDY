@@ -3,47 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechCardy - Your Digital Identity, Simplified</title>
+  <title>TechCardy - Redefining Digital Connections</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="myprofile.html">Contact</a>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="myprofile" class="nav-link">Contact</a>
     </nav>
-    <h1>TechCardy</h1>
-    <h2>Your Digital Identity, Simplified</h2>
+    <h1 class="logo">TechCardy</h1>
+    <h2 class="tagline">Redefining Digital Connections</h2>
   </header>
 
   <section class="hero">
     <div class="hero-content">
-      <h2>Revolutionize Your Networking</h2>
-      <p>Create stunning digital business cards and share them effortlessly.</p>
-      <button class="cta-button">Get Started</button>
+      <h2 class="hero-title">The Smartest Way to Network</h2>
+      <p class="hero-description">
+        Unlock the power of NFC technology to share your professional details instantly. Seamless, stylish, and secure.
+      </p>
+      <button class="cta-button">Create Your Card</button>
     </div>
     <img src="hero-image.jpg" alt="Hero Image" class="hero-image">
   </section>
 
-  <section class="features">
-    <h2>Why Choose TechCardy?</h2>
-    <div class="feature-card">
-      <h3>Easy to Use</h3>
-      <p>Our intuitive interface makes creating and sharing your digital card a breeze.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Professional Design</h3>
-      <p>Choose from our stylish templates or customize your own.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Secure and Reliable</h3>
-      <p>Your data is safe with our robust security measures.</p>
+  <section id="features" class="features">
+    <h2 class="section-title">Our Features</h2>
+    <div class="features-container">
+      <div class="feature-card">
+        <h3>Effortless Sharing</h3>
+        <p>Share your contact details with a tap. No apps, no hassle.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Customizable Designs</h3>
+        <p>Choose from sleek templates or craft your own unique style.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Analytics Dashboard</h3>
+        <p>Track interactions and measure your networking impact.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Environmentally Friendly</h3>
+        <p>Say goodbye to paper business cards and embrace sustainability.</p>
+      </div>
     </div>
   </section>
 
+  <section id="testimonials" class="testimonials">
+    <h2 class="section-title">What People Say</h2>
+    <div class="testimonials-container">
+      <div class="testimonial-card">
+        <p class="testimonial-text">"TechCardy made networking at events so much easier! Everyone was impressed with the NFC feature."</p>
+        <h4>- Alex M., Marketing Consultant</h4>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"I love how customizable my card is. It truly reflects my personal brand."</p>
+        <h4>- Sarah T., Designer</h4>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"The analytics feature helped me identify which connections were most valuable!"</p>
+        <h4>- John P., Business Analyst</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="contact-description">Want to learn more? Contact us to get started or request a demo.</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" class="form-input" required>
+      <input type="email" placeholder="Your Email" class="form-input" required>
+      <textarea placeholder="Your Message" class="form-textarea" required></textarea>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+  </section>
+
   <footer>
-    <p>&copy; 2023 TechCardy. All rights reserved.</p>
+    <p>&copy; 2023 TechCardy. All rights reserved. Designed for the future.</p>
   </footer>
 </body>
 </html>
