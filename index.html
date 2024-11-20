@@ -3,67 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechCardy - Redefining Digital Connections</title>
+  <title>TechCardy - The Future of Networking</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
     <nav class="navbar">
-      <a href="#" class="nav-link">Home</a>
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
       <a href="#features" class="nav-link">Features</a>
       <a href="#testimonials" class="nav-link">Testimonials</a>
       <a href="myprofile" class="nav-link">Contact</a>
     </nav>
-    <h1 class="logo">TechCardy</h1>
-    <h2 class="tagline">Redefining Digital Connections</h2>
+    <div class="header-content">
+      <h1 class="logo">TechCardy</h1>
+      <p class="tagline">Your Network, Transformed by Technology</p>
+    </div>
   </header>
 
-  <section class="hero">
+  <section id="home" class="hero">
     <div class="hero-content">
-      <h2 class="hero-title">The Smartest Way to Network</h2>
+      <h1 class="hero-title">Experience the Next Generation of Networking</h1>
       <p class="hero-description">
-        Unlock the power of NFC technology to share your professional details instantly. Seamless, stylish, and secure.
+        Revolutionize how you connect with NFC-powered smart business cards. Tap. Share. Grow.
       </p>
-      <button class="cta-button">Create Your Card</button>
+      <button class="cta-button">Get Your Card Now</button>
     </div>
-    <img src="hero-image.jpg" alt="Hero Image" class="hero-image">
+    <div class="hero-animation">
+      <img src="nfc-animation.gif" alt="NFC Technology in Action">
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="section-title">What is TechCardy?</h2>
+    <p class="about-description">
+      TechCardy uses cutting-edge NFC technology to replace traditional business cards with digital, customizable solutions. Simply tap to share your contact details, portfolio, or social links in an instant.
+    </p>
   </section>
 
   <section id="features" class="features">
-    <h2 class="section-title">Our Features</h2>
-    <div class="features-container">
+    <h2 class="section-title">Features That Redefine Networking</h2>
+    <div class="features-grid">
       <div class="feature-card">
-        <h3>Effortless Sharing</h3>
-        <p>Share your contact details with a tap. No apps, no hassle.</p>
+        <h3>Instant Sharing</h3>
+        <p>Share your contact info with a tap. No app required.</p>
+        <img src="instant-sharing.png" alt="Instant Sharing">
       </div>
       <div class="feature-card">
-        <h3>Customizable Designs</h3>
-        <p>Choose from sleek templates or craft your own unique style.</p>
+        <h3>Customizable Cards</h3>
+        <p>Reflect your brand with customizable templates.</p>
+        <img src="custom-design.png" alt="Custom Design">
       </div>
       <div class="feature-card">
-        <h3>Analytics Dashboard</h3>
-        <p>Track interactions and measure your networking impact.</p>
+        <h3>Smart Analytics</h3>
+        <p>Track views, taps, and engagement with our dashboard.</p>
+        <img src="analytics.png" alt="Analytics">
       </div>
       <div class="feature-card">
-        <h3>Environmentally Friendly</h3>
-        <p>Say goodbye to paper business cards and embrace sustainability.</p>
+        <h3>Eco-Friendly</h3>
+        <p>Eliminate paper waste and go fully digital.</p>
+        <img src="eco-friendly.png" alt="Eco-Friendly">
       </div>
     </div>
   </section>
 
   <section id="testimonials" class="testimonials">
-    <h2 class="section-title">What People Say</h2>
-    <div class="testimonials-container">
-      <div class="testimonial-card">
-        <p class="testimonial-text">"TechCardy made networking at events so much easier! Everyone was impressed with the NFC feature."</p>
-        <h4>- Alex M., Marketing Consultant</h4>
+    <h2 class="section-title">What Our Users Say</h2>
+    <div class="testimonials-slider">
+      <div class="testimonial">
+        <p class="testimonial-text">"TechCardy is a game changer! Networking has never been this easy."</p>
+        <h4>- Alex M., Marketing Pro</h4>
       </div>
-      <div class="testimonial-card">
-        <p class="testimonial-text">"I love how customizable my card is. It truly reflects my personal brand."</p>
-        <h4>- Sarah T., Designer</h4>
+      <div class="testimonial">
+        <p class="testimonial-text">"The customization options let me showcase my brand perfectly."</p>
+        <h4>- Sarah T., Creative Designer</h4>
       </div>
-      <div class="testimonial-card">
-        <p class="testimonial-text">"The analytics feature helped me identify which connections were most valuable!"</p>
+      <div class="testimonial">
+        <p class="testimonial-text">"The analytics are super helpful for follow-ups after events."</p>
         <h4>- John P., Business Analyst</h4>
       </div>
     </div>
@@ -71,7 +87,7 @@
 
   <section id="contact" class="contact">
     <h2 class="section-title">Get in Touch</h2>
-    <p class="contact-description">Want to learn more? Contact us to get started or request a demo.</p>
+    <p>Have questions? Want a demo? We'd love to hear from you!</p>
     <form class="contact-form">
       <input type="text" placeholder="Your Name" class="form-input" required>
       <input type="email" placeholder="Your Email" class="form-input" required>
@@ -80,8 +96,8 @@
     </form>
   </section>
 
-  <footer>
-    <p>&copy; 2023 TechCardy. All rights reserved. Designed for the future.</p>
+  <footer class="footer">
+    <p>&copy; 2023 TechCardy. All rights reserved.</p>
   </footer>
 </body>
 </html>
