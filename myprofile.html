@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual 1  Profile - TechCardy</title>
+  <link rel="stylesheet" href="styless2.css">
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-card">
+      <div class="profile-header">
+        <img src="pic.jpg" alt="Profile Picture" class="profile-pic">
+        <h1 class="name">KRISHI AGARWAL</h1>
+        <p class="title">FOUNDER OF TechCardy</p>
+      </div>
+      <p class="bio">
+        We at TechCardy aim to provide people with best technologies and a modern way to share their contact.
+      </p>
+      <div class="contact-info">
+        <a href="tel:+918250226290" class="contact-link"> +91 8250226290</a>
+        <a href="mailto:agarwalkrishi67@gmail.com" class="contact-link"> agarwalkrishi67@gmail.com</a>
+        <p class="address">SILIGURI, WEST BENGAL -734001</p>
+      </div>
+      <!-- <div class="social-links">
+        <a href="https://linkedin.com/in/johndoe" class="social-link" target="_blank">LinkedIn</a>
+        <a href="https://github.com/johndoe" class="social-link" target="_blank">GitHub</a>
+        <a href="https://twitter.com/johndoe" class="social-link" target="_blank">Twitter</a>
+      </div> -->
+      <button class="save-contact-btn" id="saveContact"> Save Contact</button>
+      <div class="qr-code">
+        <img src="qr-code.png" alt="QR Code">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Generate a VCF file for download
+    document.getElementById("saveContact").addEventListener("click", function() {
+      const vcfContent = `
+BEGIN:VCARD
+VERSION:3.0
+FN:KRISHI AGARWAL
+TEL:+918250226290
+EMAIL:agarwalkrishi67@gmail.com
+ADR;TYPE=HOME:;;SILIGURI;;WESTBENGAL;INDIA;734001
+ORG:TechCardy
+TITLE:Web Developer
+URL:www.techcardy.in
+END:VCARD
+      `;
+      const blob = new Blob([vcfContent.trim()], { type: "text/vcard" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "krishi.vcf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  </script>
+</body>
+</html>
