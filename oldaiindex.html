@@ -3,6 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechCardy offers cutting-edge NFC and QR-enabled business cards. Seamlessly share your contact details and enhance your networking experience with just a tap.">
+  <meta name="keywords" content="NFC business cards, QR business cards, TechCardy, digital networking, smart business cards">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="TechCardy">
+  <meta property="og:title" content="TechCardy - NFC Business Cards of the Future">
+  <meta property="og:description" content="Discover TechCardy, the innovative NFC business card solution for seamless networking and digital identity sharing.">
+  <meta property="og:image" content="https://yourwebsite.com/og-image.jpg">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TechCardy",
+    "url": "https://yourwebsite.com",
+    "logo": "https://yourwebsite.com/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/TechCardy",
+      "https://www.twitter.com/TechCardy"
+    ],
+    "description": "TechCardy offers NFC-powered digital business cards for seamless networking.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "support@techcardy.com",
+      "contactType": "Customer Support"
+    }
+  }
+  </script>
   <title>TechCardy - NFC Business Cards of the Future</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +41,7 @@
       <a href="#features" class="nav-link">Features</a>
       <a href="#technology" class="nav-link">Technology</a>
       <a href="#testimonials" class="nav-link">Testimonials</a>
-      <a href="myprofile" class="nav-link">Contact</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </nav>
     <div class="header-overlay">
       <h1 class="logo">TechCardy</h1>
@@ -33,7 +61,7 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="nfc-animation"></div>
+      <img src="nfc-animation.png" alt="NFC-powered digital business card animation">
     </div>
   </section>
 
@@ -105,10 +133,10 @@
   <section id="contact" class="contact">
     <h2 class="section-title">Connect With Us</h2>
     <p class="contact-description">Have questions? Let’s chat or schedule a demo!</p>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" class="form-input" required>
-      <input type="email" placeholder="Your Email" class="form-input" required>
-      <textarea placeholder="Your Message" class="form-textarea" required></textarea>
+    <form class="contact-form" action="submit_form.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+      <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+      <textarea name="message" placeholder="Your Message" class="form-textarea" required></textarea>
       <button type="submit" class="cta-button">Send Message</button>
     </form>
   </section>
